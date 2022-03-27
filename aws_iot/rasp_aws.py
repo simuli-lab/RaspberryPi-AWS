@@ -123,7 +123,7 @@ from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTClient
 myMQTTClient = AWSIoTMQTTClient("ClientID") #random key, if another connection using the same key is opened the previous one is auto closed by AWS IOT
 myMQTTClient.configureEndpoint("<Endpoint>", 8883)
 
-myMQTTClient.configureCredentials("/home/pi/aws_iot/<RootCA certificate>", "/home/pi/aws_iot/<private key>", "/home/pi/aws_iot/<Security Certificate>")
+myMQTTClient.configureCredentials("/home/pi/RaspberryPi-AWS/aws_iot/<RootCA certificate>", "/home/pi/RaspberryPi-AWS/aws_iot/<private key>", "/home/pi/RaspberryPi-AWS/aws_iot/<Security Certificate>")
 
 myMQTTClient.configureOfflinePublishQueueing(-1) # Infinite offline Publish queueing
 myMQTTClient.configureDrainingFrequency(2) # Draining: 2 Hz
